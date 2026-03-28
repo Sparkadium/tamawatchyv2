@@ -5,7 +5,7 @@
 ### [**Buy Watchy!**](https://shop.sqfmi.com/products/watchy-kit)
 
 ## Overview
-This is a Tamagotchi emulator firmware for Watchy. It uses [TamaLIB](https://github.com/jcrona/tamalib) for the core system emulation and can emulate the original Tamagotchi P1/P2.
+This is a Tamagotchi emulator firmware for [Watchy](https://watchy.sqfmi.com). It uses [TamaLIB](https://github.com/jcrona/tamalib) for the core system emulation and can emulate the original Tamagotchi P1/P2.
 
 To maximize battery life, the emulator features an intelligent deep-sleep cycle. The Watchy goes into deep sleep after a few seconds of inactivity. During deep sleep, the state is securely held in RTC RAM (or NVS flash). When a button is pressed or the periodic timer wakes the device, the emulator reliably restores state and "fast-forwards" the core engine to catch up mathematically to the current exact time without user intervention—bringing the pet back to life smoothly.
 
