@@ -23,7 +23,7 @@ To maximize battery life, the emulator features an intelligent deep-sleep cycle.
 ## Code Structure
 The project is organized circularly to isolate specific systems (display, power, storage, input).
 
-- **`tama.ino`** - The primary Arduino sketch. Hands initialization, ROM loading, evaluating the deep-sleep wake cause, and driving the interactive loop.
+- **`tama.ino`** - The primary Arduino sketch, handles initialization, ROM loading, evaluating the deep-sleep wake cause, and driving the interactive loop.
 - **`config.h`** - The centralized configuration file with hardware pinouts, deep sleep intervals, LCD scaling calculations, and feature toggles.
 - **`tama_hal.cpp` & `.h`** - The Hardware Abstraction Layer bridging TamaLIB's generic device callbacks (button polling, screen memory updates) into ESP32S3's hardware interactions.
 - **`tama_display.cpp` & `.h`** - Manages translating the default 32x16 Tamagotchi LCD to a scaled output on Watchy's 200x200 e-ink display. Handles full & partial e-ink panel refreshes.
