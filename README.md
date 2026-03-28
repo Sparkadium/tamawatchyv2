@@ -1,6 +1,8 @@
 # TamaWatchy
 
-[**Buy Watchy!**](https://shop.sqfmi.com/products/watchy-kit)
+<img src="./tamawatchy.jpg" width="300">
+
+### [**Buy Watchy!**](https://shop.sqfmi.com/products/watchy-kit)
 
 ## Overview
 This is a Tamagotchi emulator firmware for Watchy. It uses [TamaLIB](https://github.com/jcrona/tamalib) for the core system emulation and can emulate the original Tamagotchi P1/P2.
