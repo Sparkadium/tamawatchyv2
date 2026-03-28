@@ -9,6 +9,9 @@ This is a Tamagotchi emulator firmware for [Watchy](https://watchy.sqfmi.com). I
 
 To maximize battery life, the emulator features an intelligent deep-sleep cycle. The Watchy goes into deep sleep after a few seconds of inactivity. During deep sleep, the state is securely held in RTC RAM (or NVS flash). When a button is pressed or the periodic timer wakes the device, the emulator reliably restores state and "fast-forwards" the core engine to catch up mathematically to the current exact time without user intervention—bringing the pet back to life smoothly.
 
+## Button Mapping
+The buttons on Watchy at lower right, lower left, and upper left map to the left, center, and middle button respectively. The buttons can be remapped in the config.
+
 ## Code Structure
 The project is organized circularly to isolate specific systems (display, power, storage, input).
 
