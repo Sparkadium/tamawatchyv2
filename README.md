@@ -17,7 +17,7 @@ To maximize battery life, the emulator features an intelligent deep-sleep cycle.
 3. Use [esptool web](https://espressif.github.io/esptool-js/) (or esptool.py if you have it locally installed) and flash the firmware to 0x0000
 4. Reset and have fun!
    
-*Note: Currently only Watchy V3 is supported*
+*Note: Currently only Watchy V2 is supported*
 
 ## Buttons
 ![buttons](./tamabuttonmap.png)
