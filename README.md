@@ -53,3 +53,5 @@ The project is organized circularly to isolate specific systems (display, power,
 5. **Deep Sleep**: Without any registered input for `IDLE_TIMEOUT_MS` the emulator effectively freezes. The system serializes the CPU arrays, triggers the minimal time-only `sleep_screen`, commits properties back to RTC/NVS, and enters deep sleep while holding a wakeup timer matching `DEEP_SLEEP_INTERVAL_US`.
 
 Compatible with V2. Coded using claude AI presented by Sparkadium. 
+
+Setting the clock also sets the ESP32 internal clock. Reset drifting clock to internal clock with A+C for two seconds. If you mess up setting the clock at first, you gotta reset your tamagotchi, holding C (lower left button) for 5 seconds from sleep to boot.
