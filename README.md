@@ -1,7 +1,5 @@
 # TamaWatchy
 
-SCROLL TO BOTTOM FOR V2 EDIT NOTES
-
 <img src="./tamawatchy.jpg" width="300">
 
 ### [**Buy Watchy!**](https://shop.sqfmi.com/products/watchy-kit)
@@ -17,7 +15,7 @@ To maximize battery life, the emulator features an intelligent deep-sleep cycle.
 3. Use [esptool web](https://espressif.github.io/esptool-js/) (or esptool.py if you have it locally installed) and flash the firmware to 0x0000
 4. Reset and have fun!
    
-*Note: Currently only Watchy V2 is supported*
+*Note: Currently only Watchy V3 is supported*
 
 ## Buttons
 ![buttons](./tamabuttonmap.png)
@@ -51,7 +49,3 @@ The project is organized circularly to isolate specific systems (display, power,
 3. **Time Reconciliation (Fast-Forwarding and RTC Sync)**: Because the generic TamaLIB does not experience time while the Watchy is asleep, the system computes the missing real-time gap. It pushes the ROM clock to process that missing time completely unthrottled without writing frames to the screen, allowing internal events (like growing older, getting hungry) to natively process immediately. Following this fast-forward cycle, the emulator explicitly synchronizes the game's internal clock to Watchy's internal RTC. It achieves this by reading the exact time (hours, minutes, seconds) and writing it directly into the emulated Tamagotchi's RAM.
 4. **Interactive Mode**: If woken by a button press, the screen refreshes fully and the program switches into `loop()`. In `loop()`, it monitors for pin interrupts, runs instructions uniformly, and triggers display updates.
 5. **Deep Sleep**: Without any registered input for `IDLE_TIMEOUT_MS` the emulator effectively freezes. The system serializes the CPU arrays, triggers the minimal time-only `sleep_screen`, commits properties back to RTC/NVS, and enters deep sleep while holding a wakeup timer matching `DEEP_SLEEP_INTERVAL_US`.
-
-Compatible with V2. Coded using claude AI presented by Sparkadium. 
-
-Setting the clock also sets the ESP32 internal clock. Reset drifting clock to internal clock with A+C for two seconds. If you mess up setting the clock at first, you gotta reset your tamagotchi, holding C (lower left button) for 5 seconds from sleep to boot.
