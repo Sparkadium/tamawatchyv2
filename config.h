@@ -51,7 +51,7 @@
 /* [V2 PATCH] Buttons are ACTIVE HIGH on this board (0=released, 1=pressed) */
 #define BTN_ACTIVE_STATE  HIGH
 
-#define BTN_DEBOUNCE_MS   50
+#define BTN_DEBOUNCE_MS   10
 
 /******************************************************************************
  * Tamagotchi Emulator Settings
