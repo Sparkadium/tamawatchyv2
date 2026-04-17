@@ -54,6 +54,6 @@ The project is organized circularly to isolate specific systems (display, power,
 
 V2 Edit: Compatible with V2. Coded using claude AI presented by Sparkadium. 
 
-Setting the clock also sets the ESP32 internal clock. Reset drifting clock to internal clock with A+C for two seconds. If you mess up setting the clock at first, you gotta reset your tamagotchi, holding C (lower left button) for 5 seconds from sleep to boot.
+Reset clock with A+C for two seconds. 
 
 Also it now saves Tama state to NVS instead of RTC do you don't lose your Tama if power runs out.
