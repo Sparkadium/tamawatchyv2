@@ -88,7 +88,7 @@
 /******************************************************************************
  * State Persistence
  ******************************************************************************/
-#define STATE_STORAGE_RTC  1
+#define STATE_STORAGE_RTC  0
 
 #define NVS_NAMESPACE  "tama"
 #define NVS_KEY_STATE  "state"
